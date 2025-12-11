@@ -11,27 +11,29 @@
 
     <div class="grid-bg"></div>
 
-    <nav class="flex">
-        <div class="logo mono uppercase flex">
+    <nav>
+        <div class="logo-group mono uppercase">
             <!-- Canvas for Ouroboros Animation -->
             <canvas id="logo-canvas" width="48" height="48"></canvas>
-            PHRONOS
+            <span class="logo-text">PHRONOS</span>
         </div>
-        <div class="nav-links flex">
+        
+        <!-- Tagline -->
+        <span class="mono uppercase tagline-header">
+            // Public Hub for Resilient Ontological Navigation via Open Science
+        </span>
+
+        <div class="nav-links">
+            <a href="#" class="nav-link mono uppercase">Observatory</a>
+            <a href="#" class="nav-link mono uppercase">Instruments</a>
             <a href="#" class="nav-link mono uppercase">Telemetry</a>
-            <a href="#" class="nav-link mono uppercase">Methodology</a>
-            <a href="#" class="nav-link mono uppercase">Risk Radar</a>
-            <a href="#" class="btn-lab mono uppercase">Access Instruments ↗</a>
+            <a href="#" class="nav-link mono uppercase">Constitution</a>
         </div>
     </nav>
 
     <section class="hero grid">
         <div class="content-left">
-            <!-- System Header -->
-            <span class="mono uppercase system-header">
-                // Public Hub for Resilient Ontological Navigation via Open Science
-            </span>
-
+            
             <h1>Calibrating the <br> <span>Human Signal.</span></h1>
 
             <div class="subtitle-box">
@@ -40,9 +42,23 @@
                 </p>
             </div>
 
-            <div class="cta-group flex">
-                <button class="btn-primary mono">View Latest Signals</button>
-                <a href="#" class="nav-link mono uppercase" style="align-self: center; border-bottom: 1px solid var(--ink);">Read the Constitution</a>
+            <!-- DUAL SYSTEM CONTROLS -->
+            <div class="cta-group">
+                
+                <!-- 1. The Observatory Link -->
+                <button id="btn-connect" class="btn-system btn-ink mono uppercase">
+                    <span class="icon-box">
+                        <span class="status-light"></span>
+                    </span>
+                    <span id="btn-text">Connect to Observatory</span>
+                </button>
+
+                <!-- 2. The Instruments Link -->
+                <a href="#" class="btn-system btn-gold mono uppercase">
+                    <span class="icon-box">↗</span>
+                    <span>Access Instruments</span>
+                </a>
+
             </div>
         </div>
 
@@ -87,7 +103,9 @@
                 </p>
             </div>
         </div>
-        <span class="mono hidden-mobile" style="margin-left: 2rem;">v2.5.0</span>
+        <div style="text-align: right;">
+            <div class="mono" style="margin-left: 2rem;">(c) PHRONOS 2025</div>
+        </div>
     </footer>
 
     <!-- Main Logic -->
