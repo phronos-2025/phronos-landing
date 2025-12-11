@@ -23,7 +23,7 @@ body {
 
 /* NAVIGATION */
 
-. phronos-nav {
+.phronos-nav {
   position: sticky;
   top: 0;
   background-color: var(--phronos-color-paper);
@@ -70,7 +70,7 @@ body {
   text-transform: uppercase;
 }
 
-. phronos-nav-links {
+.phronos-nav-links {
   display: flex;
   gap: var(--phronos-space-3xl);
   align-items: center;
@@ -407,13 +407,13 @@ body {
   color: var(--phronos-color-gold);
 }
 
-. phronos-footer-bottom {
+.phronos-footer-bottom {
   border-top: 1px solid rgba(242, 240, 233, 0.2);
   padding-top: var(--phronos-space-2xl);
   text-align: center;
 }
 
-. phronos-footer-version {
+.phronos-footer-version {
   font-family: var(--phronos-font-mono);
   font-size: var(--phronos-text-xs);
   text-transform: uppercase;
