@@ -1,0 +1,466 @@
+/**
+ * P.H.R.O.N.O.S. Landing Page - Main Styles
+ */
+
+* {
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--phronos-color-paper);
+  color: var(--phronos-color-ink);
+  font-family: var(--phronos-font-serif);
+  font-size: var(--phronos-text-base);
+  line-height: var(--phronos-leading-normal);
+  position: relative;
+}
+
+/* NAVIGATION */
+
+. phronos-nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--phronos-color-paper);
+  border-bottom: var(--phronos-border-width-default) solid var(--phronos-color-ink);
+  z-index: var(--phronos-z-sticky);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.phronos-nav-container {
+  width: 100%;
+  max-width: var(--phronos-max-width-content);
+  margin:  0 auto;
+  padding: 0 var(--phronos-padding-page);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phronos-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--phronos-space-lg);
+  text-decoration: none;
+  color: var(--phronos-color-ink);
+  font-weight: 600;
+}
+
+.phronos-lens-icon {
+  color: var(--phronos-color-gold);
+  transition: transform var(--phronos-transition-normal);
+}
+
+.phronos-nav-logo:hover .phronos-lens-icon {
+  transform: rotate(10deg);
+}
+
+.phronos-brand-text {
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-lg);
+  font-weight: 700;
+  letter-spacing: var(--phronos-tracking-wider);
+  text-transform: uppercase;
+}
+
+. phronos-nav-links {
+  display: flex;
+  gap: var(--phronos-space-3xl);
+  align-items: center;
+}
+
+.phronos-nav-link {
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-xs);
+  text-transform: uppercase;
+  color: var(--phronos-color-ink);
+  text-decoration: none;
+  letter-spacing: var(--phronos-tracking-wide);
+  transition: color var(--phronos-transition-normal);
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+.phronos-nav-link:hover {
+  color: var(--phronos-color-gold);
+  border-bottom-color: var(--phronos-color-gold);
+}
+
+/* HERO SECTION */
+
+.phronos-hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--phronos-padding-section) var(--phronos-padding-page);
+  text-align: center;
+}
+
+.phronos-hero-content {
+  max-width:  900px;
+}
+
+.phronos-hero-title {
+  font-size:  var(--phronos-text-5xl);
+  font-weight: 400;
+  line-height: var(--phronos-leading-tight);
+  margin-bottom: var(--phronos-space-2xl);
+  color: var(--phronos-color-ink);
+}
+
+.phronos-hero-subtitle {
+  font-size: var(--phronos-text-2xl);
+  font-weight: 300;
+  line-height: var(--phronos-leading-relaxed);
+  margin-bottom: var(--phronos-space-3xl);
+  color: var(--phronos-color-faded);
+}
+
+.phronos-hero-ctas {
+  display: flex;
+  gap: var(--phronos-space-2xl);
+  justify-content:  center;
+  flex-wrap: wrap;
+}
+
+/* SECTIONS */
+
+.phronos-section {
+  padding: var(--phronos-padding-section) var(--phronos-padding-page);
+  border-top: var(--phronos-border-width-default) solid rgba(26, 26, 26, 0.1);
+}
+
+.phronos-section-alt {
+  background-color: rgba(240, 238, 233, 0.5);
+}
+
+.phronos-section-cta {
+  text-align: center;
+}
+
+.phronos-section-title {
+  font-size: var(--phronos-text-4xl);
+  font-weight: 400;
+  margin-bottom: var(--phronos-space-3xl);
+  color: var(--phronos-color-ink);
+  text-align: center;
+}
+
+/* GRID LAYOUTS */
+
+.phronos-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--phronos-space-3xl);
+  margin-top: var(--phronos-space-2xl);
+}
+
+.phronos-concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--phronos-space-2xl);
+  margin-top: var(--phronos-space-2xl);
+}
+
+/* CARDS */
+
+.phronos-card {
+  border: var(--phronos-border-width-default) solid var(--phronos-color-ink);
+  padding: var(--phronos-padding-card);
+  background-color: white;
+  transition: all var(--phronos-transition-normal);
+}
+
+.phronos-card:hover {
+  box-shadow: var(--phronos-shadow-md);
+  transform: translate(-4px, -4px);
+}
+
+.phronos-card-title {
+  font-size: var(--phronos-text-lg);
+  font-weight: 600;
+  margin-bottom:  var(--phronos-space-lg);
+  color: var(--phronos-color-ink);
+}
+
+.phronos-card-text {
+  font-size: var(--phronos-text-base);
+  line-height: var(--phronos-leading-relaxed);
+  color: var(--phronos-color-faded);
+}
+
+.phronos-values-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--phronos-space-lg);
+}
+
+.phronos-values-list li {
+  font-size: var(--phronos-text-sm);
+  line-height: var(--phronos-leading-relaxed);
+  color: var(--phronos-color-faded);
+}
+
+/* CONCEPTS */
+
+.phronos-concept {
+  position: relative;
+  padding: var(--phronos-space-2xl);
+  border-left: var(--phronos-border-width-thick) solid var(--phronos-color-gold);
+}
+
+.phronos-concept-number {
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-5xl);
+  font-weight: 700;
+  color: rgba(176, 141, 85, 0.2);
+  margin-bottom: var(--phronos-space-lg);
+}
+
+.phronos-concept-title {
+  font-size: var(--phronos-text-xl);
+  font-weight: 600;
+  margin-bottom:  var(--phronos-space-md);
+  color: var(--phronos-color-ink);
+}
+
+.phronos-concept p {
+  font-size: var(--phronos-text-sm);
+  line-height: var(--phronos-leading-relaxed);
+  color: var(--phronos-color-faded);
+}
+
+/* DATA PANEL */
+
+.phronos-data-panel {
+  border: var(--phronos-border-width-default) solid var(--phronos-color-ink);
+  box-shadow: var(--phronos-shadow-lg);
+  background-color: white;
+  overflow: hidden;
+}
+
+.phronos-data-header {
+  background-color: var(--phronos-color-ink);
+  color: var(--phronos-color-paper);
+  padding: var(--phronos-space-lg) var(--phronos-space-2xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--phronos-font-mono);
+}
+
+.phronos-data-label {
+  font-size: var(--phronos-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--phronos-tracking-wider);
+  font-weight: 600;
+}
+
+.phronos-data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--phronos-space-2xl);
+  padding: var(--phronos-space-2xl);
+}
+
+.phronos-stat {
+  text-align: center;
+}
+
+.phronos-stat-value {
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-2xl);
+  font-weight: 700;
+  color: var(--phronos-color-ink);
+  margin-bottom: var(--phronos-space-sm);
+}
+
+.phronos-stat-label {
+  font-size: var(--phronos-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--phronos-tracking-wide);
+  color: var(--phronos-color-faded);
+}
+
+/* STATUS BADGES */
+
+.phronos-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--phronos-space-sm);
+  padding: var(--phronos-space-sm) var(--phronos-space-lg);
+  border-left: var(--phronos-border-width-thick) solid;
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-xs);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.phronos-status-living {
+  color: var(--phronos-status-living-color);
+  background-color: var(--phronos-status-living-bg);
+  border-left-color: var(--phronos-status-living-color);
+}
+
+.phronos-status-stable {
+  color:  var(--phronos-status-stable-color);
+  background-color: var(--phronos-status-stable-bg);
+  border-left-color:  var(--phronos-status-stable-color);
+}
+
+.phronos-status-archived {
+  color: var(--phronos-status-archived-color);
+  background-color:  var(--phronos-status-archived-bg);
+  border-left-color: var(--phronos-status-archived-color);
+}
+
+.phronos-status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity:  0.5;
+  }
+}
+
+/* CTA SECTION */
+
+.phronos-cta-text {
+  font-size: var(--phronos-text-xl);
+  line-height: var(--phronos-leading-relaxed);
+  margin-bottom: var(--phronos-space-3xl);
+  color: var(--phronos-color-faded);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phronos-cta-buttons {
+  display: flex;
+  gap: var(--phronos-space-2xl);
+  justify-content:  center;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+
+.phronos-footer {
+  background-color: var(--phronos-color-ink);
+  color: var(--phronos-color-paper);
+  padding: var(--phronos-space-4xl) var(--phronos-padding-page) var(--phronos-space-2xl);
+  border-top: var(--phronos-border-width-default) solid rgba(242, 240, 233, 0.2);
+}
+
+.phronos-footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--phronos-space-3xl);
+  margin-bottom: var(--phronos-space-3xl);
+}
+
+.phronos-footer-section h4 {
+  font-size:  var(--phronos-text-lg);
+  font-weight: 600;
+  margin-bottom: var(--phronos-space-lg);
+  color: var(--phronos-color-gold);
+}
+
+.phronos-footer-text {
+  font-size: var(--phronos-text-sm);
+  line-height: var(--phronos-leading-relaxed);
+  opacity: 0.8;
+}
+
+.phronos-footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--phronos-space-md);
+}
+
+.phronos-footer-links a {
+  color: var(--phronos-color-paper);
+  text-decoration: none;
+  font-size: var(--phronos-text-sm);
+  transition: color var(--phronos-transition-normal);
+}
+
+.phronos-footer-links a:hover {
+  color: var(--phronos-color-gold);
+}
+
+. phronos-footer-bottom {
+  border-top: 1px solid rgba(242, 240, 233, 0.2);
+  padding-top: var(--phronos-space-2xl);
+  text-align: center;
+}
+
+. phronos-footer-version {
+  font-family: var(--phronos-font-mono);
+  font-size: var(--phronos-text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--phronos-tracking-wide);
+  opacity: 0.6;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:  768px) {
+  .phronos-hero-title {
+    font-size: var(--phronos-text-3xl);
+  }
+  
+  .phronos-hero-subtitle {
+    font-size: var(--phronos-text-lg);
+  }
+  
+  .phronos-section-title {
+    font-size: var(--phronos-text-2xl);
+  }
+  
+  .phronos-nav-links {
+    gap: var(--phronos-space-xl);
+  }
+  
+  .phronos-data-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .phronos-nav-links {
+    flex-direction: column;
+    gap: var(--phronos-space-md);
+  }
+  
+  .phronos-hero-ctas {
+    flex-direction:  column;
+    width: 100%;
+  }
+  
+  .phronos-hero-ctas button {
+    width: 100%;
+  }
+  
+  .phronos-data-grid {
+    grid-template-columns: 1fr;
+  }
+}
