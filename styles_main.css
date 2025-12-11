@@ -62,6 +62,12 @@ nav {
     z-index: 100;
 }
 
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .logo {
     font-weight: 700;
     font-size: 1rem;
@@ -75,7 +81,16 @@ nav {
     height: 24px;
 }
 
-.nav-links { gap: 2.5rem; }
+.tagline {
+    color: var(--gold);
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    gap: 2.5rem;
+    align-items: center;
+}
 
 .nav-link {
     font-size: 0.75rem;
@@ -282,6 +297,8 @@ footer {
     h1 { font-size: 3.5rem; }
     .subtitle { max-width: 100%; }
     nav { flex-direction: column; gap: 1.5rem; align-items: flex-start; }
+    .logo-wrapper { align-items: flex-start; }
+    .tagline { font-size: 0.6rem; max-width: 90%; }
     .nav-links { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
     .nav-link { display: none; } /* Hide links on mobile for simplicity, keep CTA */
     .hidden-mobile { display: none; }
