@@ -13,74 +13,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- BACKGROUND GRID -->
-    <div class="grid-bg"></div>
-
     <!-- NAVIGATION -->
-    <nav class="nav">
-        <div class="logo">
-            <div class="lens-icon pulse"></div>
-            <span class="logo-text">PHRONOS | 2025</span>
+    <nav class="phronos-nav">
+        <div class="phronos-nav-container">
+            <a href="#" class="phronos-nav-logo">
+                <div class="phronos-lens-icon">◉</div>
+                <span class="phronos-brand-text">PHRONOS</span>
+            </a>
+            <ul class="phronos-nav-links">
+                <li><a href="#telemetry" class="phronos-nav-link">Telemetry</a></li>
+                <li><a href="#methodology" class="phronos-nav-link">Methodology</a></li>
+                <li><a href="#risk-radar" class="phronos-nav-link">Risk Radar</a></li>
+                <li><a href="#anomalies" class="phronos-nav-link">Access Instruments ↗</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#telemetry" class="nav-link">Telemetry</a></li>
-            <li><a href="#methodology" class="nav-link">Methodology</a></li>
-            <li><a href="#risk-radar" class="nav-link">Risk Radar</a></li>
-            <li><a href="#anomalies" class="btn-lab">Access Instruments ↗</a></li>
-        </ul>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Calibrating the <br><span>Human Signal.</span></h1>
-            <p class="hero-subtitle">Institutions look backward. We look forward. P.H.R.O.N.O.S. is the digital observatory for scanning the decline of foresight in a high-noise world.</p>
-            <div class="cta-group">
-                <a href="#signals" class="btn-primary">View Latest Signals</a>
-                <a href="#mission" class="btn-secondary">Our Mission Statement ↗</a>
+    <section class="phronos-hero">
+        <div class="phronos-hero-content">
+            <h1 class="phronos-hero-title">Calibrating the <br><span>Human Signal.</span></h1>
+            <p class="phronos-hero-subtitle">Institutions look backward. We look forward. P.H.R.O.N.O.S. is the digital observatory for scanning the decline of foresight in a high-noise world.</p>
+            <div class="phronos-hero-ctas">
+                <a href="#signals" class="phronos-nav-link">View Latest Signals</a>
+                <a href="#mission" class="phronos-nav-link">Our Mission Statement ↗</a>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="data-panel">
-                <div class="panel-header">
-                    <span><span class="live-dot"></span>System Active</span>
-                    <span>UTC: 12:45</span>
+    </section>
+
+    <!-- DATA PANEL SECTION -->
+    <section class="phronos-section">
+        <div class="phronos-data-panel">
+            <div class="phronos-data-header">
+                <span class="phronos-data-label"><span class="phronos-status-dot"></span> System Active</span>
+                <span class="phronos-data-label">UTC: 12:45</span>
+            </div>
+            <div class="phronos-data-grid">
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">52,404</p>
+                    <p class="phronos-stat-label">Verified Sensors</p>
                 </div>
-                <div class="stats">
-                    <div class="stat"> 
-                        <p class="stat-label">Verified Sensors</p>
-                        <p class="stat-value">52,404</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-label">Signal / Noise</p>
-                        <p class="stat-value alert">Low</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-label">Forecast Precision</p>
-                        <p class="stat-value">89.2%</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat-label">Foresight Horizon</p>
-                        <p class="stat-value gold">~3.5 Years</p>
-                    </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">Low</p>
+                    <p class="phronos-stat-label">Signal / Noise</p>
+                </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">89.2%</p>
+                    <p class="phronos-stat-label">Forecast Precision</p>
+                </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">~3.5 Years</p>
+                    <p class="phronos-stat-label">Foresight Horizon</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- MISSION SECTION -->
-    <section id="mission" class="mission-section">
-        <h2>Our Mission</h2>
-        <p>"To provide transparent research, foresight tools, and institutional frameworks to ensure epistemic health."</p>
+    <section id="mission" class="phronos-section phronos-section-cta">
+        <h2 class="phronos-section-title">Our Mission</h2>
+        <p class="phronos-cta-text">"To provide transparent research, foresight tools, and institutional frameworks to ensure epistemic health."</p>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <p>© 2025 P.H.R.O.N.O.S. | A Public Digital Observatory for Strategic Foresight</p>
+    <footer class="phronos-footer">
+        <div class="phronos-footer-bottom">
+            <p class="phronos-footer-version">© 2025 P.H.R.O.N.O.S. | A Public Digital Observatory for Strategic Foresight</p>
+        </div>
     </footer>
 
     <!-- JavaScript -->
-    <!-- Link to the animation script -->
     <script src="/scripts_main.js"></script>
 </body>
 </html>
