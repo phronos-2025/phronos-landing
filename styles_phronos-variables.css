@@ -3,7 +3,7 @@
  * Version 1.0.0
  */
 
-: root {
+:root {
   /* COLORS - Primary Palette */
   --phronos-color-paper: #F2F0E9;
   --phronos-color-ink: #1A1A1A;
@@ -95,7 +95,7 @@
 
 /* UTILITY CLASSES */
 
-. phronos-container {
+.phronos-container {
   max-width: var(--phronos-max-width-content);
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@
   pointer-events: none;
 }
 
-. phronos-font-serif {
+.phronos-font-serif {
   font-family: var(--phronos-font-serif);
 }
 
@@ -131,7 +131,7 @@
   background: transparent;
   border: var(--phronos-border-width-default) solid var(--phronos-color-ink);
   color: var(--phronos-color-ink);
-  padding: 1. 2rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   font-family:  var(--phronos-font-mono);
   text-transform: uppercase;
   font-size: var(--phronos-text-sm);
@@ -174,7 +174,7 @@
 /* RESPONSIVE BREAKPOINTS */
 
 @media (max-width: 768px) {
-  : root {
+  :root {
     --phronos-padding-page: 5%;
     --phronos-padding-section: 2rem;
   }

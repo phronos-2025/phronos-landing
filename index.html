@@ -3,95 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHRONOS | The 2025 Observatory</title>
+    <meta name="description" content="P.H.R.O.N.O.S. — Calibrating the Human Signal. An observatory for strategic foresight and decision-making.">
+    <meta name="keywords" content="strategic foresight, decision making, institutional resilience, AI frameworks, observatory">
+    <meta name="author" content="P.H.R.O.N.O.S.">
+    <title>P.H.R.O.N.O.S. | Calibrating the Human Signal</title>
+    <!-- Links to CSS -->
+    <link rel="stylesheet" href="/styles_phronos-variables.css">
+    <link rel="stylesheet" href="/styles_main.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="grid-bg"></div>
-
-    <nav class="flex">
-        <div class="logo mono uppercase flex">
-            <!-- Canvas for Ouroboros Animation -->
-            <canvas id="logo-canvas" width="48" height="48"></canvas>
-            PHRONOS
-        </div>
-        <div class="nav-links flex">
-            <a href="#" class="nav-link mono uppercase">Telemetry</a>
-            <a href="#" class="nav-link mono uppercase">Methodology</a>
-            <a href="#" class="nav-link mono uppercase">Risk Radar</a>
-            <a href="#" class="btn-lab mono uppercase">Access Instruments ↗</a>
+    <!-- NAVIGATION -->
+    <nav class="phronos-nav">
+        <div class="phronos-nav-container">
+            <a href="#" class="phronos-nav-logo">
+                <div class="phronos-lens-icon">◉</div>
+                <span class="phronos-brand-text">PHRONOS</span>
+            </a>
+            <ul class="phronos-nav-links">
+                <li><a href="#telemetry" class="phronos-nav-link">Telemetry</a></li>
+                <li><a href="#methodology" class="phronos-nav-link">Methodology</a></li>
+                <li><a href="#risk-radar" class="phronos-nav-link">Risk Radar</a></li>
+                <li><a href="#anomalies" class="phronos-nav-link">Access Instruments ↗</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section class="hero grid">
-        <div class="content-left">
-            <!-- System Header -->
-            <span class="mono uppercase system-header">
-                // Public Hub for Resilient Ontological Navigation via Open Science
-            </span>
-
-            <h1>Calibrating the <br> <span>Human Signal.</span></h1>
-
-            <div class="subtitle-box">
-                <p class="subtitle">
-                    "In a world of increasing informatic entropy, PHRONOS is the digital observatory for the next epoch of human cognition."
-                </p>
-            </div>
-
-            <div class="cta-group flex">
-                <button class="btn-primary mono">View Latest Signals</button>
-                <a href="#" class="nav-link mono uppercase" style="align-self: center; border-bottom: 1px solid var(--ink);">Read the Constitution</a>
-            </div>
-        </div>
-
-        <div class="data-panel">
-            <div class="panel-header flex mono uppercase">
-                <span><span class="live-dot"></span>System Active</span>
-                <span>UTC 08:00</span>
-            </div>
-            <div class="stat-grid grid">
-                <div class="stat-cell">
-                    <span class="stat-label mono uppercase">Verified Sensors</span>
-                    <span class="stat-val serif">52,404</span>
-                </div>
-                <div class="stat-cell">
-                    <span class="stat-label mono uppercase">Signal / Noise</span>
-                    <span class="stat-val serif" style="color: var(--alert)">LOW</span>
-                </div>
-                <div class="stat-cell">
-                    <span class="stat-label mono uppercase">Agency Index</span>
-                    <span class="stat-val serif">48.2 (▼)</span>
-                </div>
-                <div class="stat-cell">
-                    <span class="stat-label mono uppercase">Foresight Horizon</span>
-                    <span class="stat-val serif" style="color: var(--gold)">~3.5 YRS</span>
-                </div>
-            </div>
-            <div class="log-entry mono uppercase">
-                > ANOMALY DETECTED: SECTOR 4 [EXECUTIVE]
+    <!-- HERO SECTION -->
+    <section class="phronos-hero">
+        <div class="phronos-hero-content">
+            <h1 class="phronos-hero-title">Calibrating the <br><span>Human Signal.</span></h1>
+            <p class="phronos-hero-subtitle">Institutions look backward. We look forward. P.H.R.O.N.O.S. is the digital observatory for scanning the decline of foresight in a high-noise world.</p>
+            <div class="phronos-hero-ctas">
+                <a href="#signals" class="phronos-nav-link">View Latest Signals</a>
+                <a href="#mission" class="phronos-nav-link">Our Mission Statement ↗</a>
             </div>
         </div>
     </section>
 
-    <footer class="flex">
-        <div class="feed-wrapper">
-            <span class="feed-label mono uppercase">Incoming Feeds</span>
-            <div class="marquee mono uppercase">
-                <p>
-                    Brookings: "Citation Confirmed" &nbsp;&bull;&nbsp; 
-                    Stanford GSB: "Data Link Active" &nbsp;&bull;&nbsp; 
-                    System: "Protocol A1 Live" &nbsp;&bull;&nbsp; 
-                    Phronos Core: "Syncing..."
-                </p>
+    <!-- DATA PANEL SECTION -->
+    <section class="phronos-section">
+        <div class="phronos-data-panel">
+            <div class="phronos-data-header">
+                <span class="phronos-data-label"><span class="phronos-status-dot"></span> System Active</span>
+                <span class="phronos-data-label">UTC: 12:45</span>
+            </div>
+            <div class="phronos-data-grid">
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">52,404</p>
+                    <p class="phronos-stat-label">Verified Sensors</p>
+                </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">Low</p>
+                    <p class="phronos-stat-label">Signal / Noise</p>
+                </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">89.2%</p>
+                    <p class="phronos-stat-label">Forecast Precision</p>
+                </div>
+                <div class="phronos-stat">
+                    <p class="phronos-stat-value">~3.5 Years</p>
+                    <p class="phronos-stat-label">Foresight Horizon</p>
+                </div>
             </div>
         </div>
-        <span class="mono hidden-mobile" style="margin-left: 2rem;">v2.5.0</span>
+    </section>
+
+    <!-- MISSION SECTION -->
+    <section id="mission" class="phronos-section phronos-section-cta">
+        <h2 class="phronos-section-title">Our Mission</h2>
+        <p class="phronos-cta-text">"To provide transparent research, foresight tools, and institutional frameworks to ensure epistemic health."</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="phronos-footer">
+        <div class="phronos-footer-bottom">
+            <p class="phronos-footer-version">© 2025 P.H.R.O.N.O.S. | A Public Digital Observatory for Strategic Foresight</p>
+        </div>
     </footer>
 
-    <!-- Main Logic -->
-    <script src="script.js"></script>
-
+    <!-- JavaScript -->
+    <script src="/scripts_main.js"></script>
 </body>
 </html>
