@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     nav.style.boxShadow = '0 2px 8px rgba(26, 26, 26, 0.1)';
   } else {
-    nav.style. boxShadow = 'none';
+    nav.style.boxShadow = 'none';
   }
 });
 
@@ -28,7 +28,7 @@ const observerOptions = {
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
-    if (entry. isIntersecting) {
+    if (entry.isIntersecting) {
       entry.target.style.opacity = '1';
       entry.target.style.transform = 'translateY(0)';
     }
@@ -36,7 +36,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all sections for fade-in effect
-document.querySelectorAll('. phronos-section, .phronos-card, .phronos-concept').forEach(element => {
+document.querySelectorAll('.phronos-section, .phronos-card, .phronos-concept').forEach(element => {
   element.style.opacity = '0';
   element.style.transform = 'translateY(20px)';
   element.style.transition = `opacity 0.6s ease, transform 0.6s ease`;
